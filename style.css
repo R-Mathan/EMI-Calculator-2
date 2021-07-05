@@ -1,0 +1,49 @@
+#emi{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.container{
+    width: 450px !important ;
+    background-color: #FF2E2E;
+    padding: 20px 20px 0 20px;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+ input, select{
+    outline: none;
+    border: none;
+    padding: 3px;
+    border-radius: 3px;
+}
+#ptag {
+    border: 3px solid #fff;
+    margin: 0 auto;
+    padding: 10px 0 2px 0;
+    width: 50%;
+}
+select{
+    width: 185px;
+}
+.head .useri{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+}
+.buttons{
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.head .btn{
+    background-color: #fff;
+    border: 1px solid #fff;
+    margin: 0px 8px;
+    outline: none;
+}
+table.table{
+    color: #fff;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculation</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div id="emi">
+        <div class="container">
+            <h1 class="text-center">EMI CALCULATION</h1><br>
+            <div class="head pb-3">           
+                <div class="useri">
+                    <label for="e-amount">Enter Amount : </label>
+                    <input type="text" name="amount" id="Eamount">
+                </div>
+                <div class="useri">
+                    <label class="s-month" for="s-month">Select Months :</label>
+                    <select class="smonth" id="smonth">
+                        <option value="" selected>Choose the Month...</option>
+                        <option value="3" data-per="12">3 Months</option>
+                        <option value="6" data-per="12">6 Months</option>
+                        <option value="9" data-per="12">9 Months</option>
+                        <option value="12" data-per="14">12 Months</option>
+                        <option value="18" data-per="14">18 Months</option>
+                        <option value="24" data-per="16">24 Months</option>
+                        <option value="36" data-per="16">36 Months</option>
+                    </select>
+                </div>
+                <div class="buttons">
+                    <button class="btn" id="btn">Submit</button>
+                    <button class="btn" id="reset">Reset</button>
+                </div>
+                <div class="d-per text-center" id="ptag" >
+                    <h6>EMI Percentage : <span id="dper"></span> </h6>
+                </div>
+            </div>
+            <div class="emi-body">
+                <table class="table" id="table">
+                    <thead id="thead">
+                        <tr>
+                            <th>S.No</th>
+                            <th>Month</th>
+                            <th>EMI Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        <tr id="trow"> 
+                            <td id="sno">1.</td>
+                            <td class="mons">January</td>
+                            <td><input type="text" id="month" class="month"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>  
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="./main.js"></script>
+</body>
+</html>
